@@ -17,8 +17,17 @@
 		<semantic:content>
 			<form:SimpleForm title = "So Simple"  layout = "ResponsiveGridLayout" >
 				
-				<Label  text = "Something"   textDirection = "RTL"  design = "Bold" />
-				<Input  value = "Something"   />
+				<Label  text = "Select"   textDirection = "RTL"  design = "Bold" />
+				<Select items = "{/ET_FruitSet}" width = "250px" >
+					<core:Item key = "{Fcode}" text = "{Fruit}" />
+				</Select>
+				
+				<Label  text = "Combo Box"   textDirection = "RTL"  design = "Bold" />
+				<ComboBox  items = "{/ET_FruitSet}"  width = "250px" >
+					<core:Item  key = "{Fcode}"  text = "{Fruit}" />
+				</ComboBox>
+				
+				
 			</form:SimpleForm>
 			
 			<form:SimpleForm  title = "2nd"  layout = "ResponsiveGridLayout" >
