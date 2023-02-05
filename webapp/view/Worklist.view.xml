@@ -27,7 +27,19 @@
 					<core:Item  key = "{Fcode}"  text = "{Fruit}" />
 				</ComboBox>
 				
+				<Label  text = "Multi Combo Box"   textDirection = "RTL"  design = "Bold" />
+				<MultiComboBox	items = "{/ET_FruitSet}"  width = "250px" >
+					<core:Item  key = "{Fcode}"  text = "{Fruit}"  />
+				</MultiComboBox>
 				
+				<Label  text = "Multi Input"   textDirection = "RTL"  design = "Bold" />
+				<MultiInput  suggestionItems = "{/ET_FruitSet}"  width = "250px" >
+					<core:Item  key = "{Fcode}"  text = "{Fruit}" />
+				</MultiInput>
+				
+				<RadioButtongroup  buttons = "{/ET_FruitSet}"  columns = 3 >
+					<RadioButton  text = "{Fruit}" />
+				</RadioButtongroup>
 			</form:SimpleForm>
 			
 			<form:SimpleForm  title = "2nd"  layout = "ResponsiveGridLayout" >
