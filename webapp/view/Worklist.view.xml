@@ -15,6 +15,13 @@
 		showNavButton="true"
 		title="{i18n>worklistViewTitle}">
 		<semantic:content>
+			<form:SimpleForm title = "So Simple"  layout = "ResponsiveGridLayout" >
+				
+				<Label  text = "Something"   textDirection = "RTL"  design = "Bold" />
+				<Input  value = "Something"   />
+			</form:SimpleForm>
+			
+			<form:SimpleForm  title = "2nd"  layout = "ResponsiveGridLayout" >
 			<Table
 				id="table"
 				width="auto"
@@ -70,7 +77,8 @@
 						</cells>
 					</ColumnListItem>
 				</items>
-			</Table>
+			</Table>				
+			</form:SimpleForm>
 		</semantic:content>
 
 		<semantic:sendEmailAction>
