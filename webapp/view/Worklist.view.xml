@@ -37,9 +37,27 @@
 					<core:Item  key = "{Fcode}"  text = "{Fruit}" />
 				</MultiInput>
 				
-				<RadioButtongroup  buttons = "{/ET_FruitSet}"  columns = 3 >
+				<Label  text = "RadioButtonGroup"   textDirection = "RTL"  design = "Bold" />
+				<RadioButtongroup  buttons = "{/ET_FruitSet}"  columns = "3" >
 					<RadioButton  text = "{Fruit}" />
 				</RadioButtongroup>
+				
+				<Label  text = "Tokenizer"   textDirection = "RTL"  design = "Bold" />
+				<Tokenizer  tokens = "{/ET_FruitSet}"  >
+					<Token  text = "{Fruit}"  />
+				</Tokenizer>
+				
+				<Label  text = "Breadcrumbs"   textDirection = "RTL"  design = "Bold" />
+				<Breadcrumbs  links = "{/ET_FruitSet}"  >
+					<Link  text = "{Fruit}"  />
+				</Breadcrumbs>
+				
+				<Label  text = "Multi Combo M Fields"   textDirection = "RTL"  design = "Bold" />
+				<MultiComboBox  items = "{/ET_FruitSet}"  width = "400px" >
+					<core:Item  key = "{Fcode}"  text = "{Fruit}  {Qty}" />
+				</MultiComboBox>
+				
+				
 			</form:SimpleForm>
 			
 			<form:SimpleForm  title = "2nd"  layout = "ResponsiveGridLayout" >
